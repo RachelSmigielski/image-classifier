@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Load the latest version of TensorFlow.js-->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <!--script src means it is pointing to an external JavaScript file-->
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <!--I guess it needs two files to work-->
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <!--K-Nearest Neighbors Classifier effectively lets us put webcam images (actually, their MobileNet activations) into different categories (or "classes"), and when the user asks to make a prediction we simply choose the class that has the most similar activation to the one we are making a prediction for.-->
+
+  </head>
+  <body>
+    <div id="console"></div>
+    <!--This is a hook Javascript will grap-->
+
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+    <!--These buttons will be used to add training images to the model-->
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>
+
+    <!--Load index.js after the content of the page-->
+    <script src="index.js"></script>
+
+  </body>
+</html>

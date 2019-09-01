@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Load the latest version of TensorFlow.js-->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <!--script src means it is pointing to an external JavaScript file-->
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <!--I guess it needs two files to work-->
+
+  </head>
+  <body>
+    <div id="console"></div>
+    <!--This is a hook Javascript will grap-->
+
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+    <!--Load index.js after the content of the page-->
+    <script src="index.js"></script>
+
+  </body>
+</html>
